@@ -1,7 +1,9 @@
 # computer-vision-project
 # Animals-10 Image Classification Project
 
-This project focuses on classifying images from the **Animals-10 dataset**, which contains 10 animal classes. The goal is to build and train a deep learning model to accurately classify these images.
+This project focuses on classifying images from the **Animals-10 dataset**, which contains 10 animal classes. The primary goal is to build, train, and optimize deep learning models to accurately classify these images.
+
+---
 
 ## Dataset
 The dataset consists of images of 10 animals:
@@ -16,21 +18,62 @@ The dataset consists of images of 10 animals:
 - Spider
 - Squirrel
 
+---
+
 ## Setup Instructions
-1. **Environment Setup**:
-   - I will be using Google Colab for this project.
-   - Ensure GPU acceleration is enabled.
+### Environment Setup
+- The project is developed and run primarily on **Google Colab**.  
+- Make sure to **enable GPU acceleration** in the Colab runtime to speed up training.
 
-2. **Dataset Download**:
-   - Download the Animals-10 dataset.
-   - Upload the dataset to Google Colab or connect your Google Drive.
+### Dataset Download
+- Download the Animals-10 dataset from the official source or repository.  
+- Upload the dataset to Google Colab or connect your **Google Drive** for easier access.
 
-3. **Data Preparation**:
-   - Explore the dataset structure.
-   - Split the dataset into training, validation, and test sets.
-   - Apply data augmentation and normalization.
-   - Create DataLoader objects for batch processing.
+---
 
-4. **Visualization**:
-   - Visualize sample images from each class.
-   - Plot a histogram to show the distribution of images across classes.
+## Data Preparation
+
+- Explore the dataset folder structure.  
+- Split the dataset into **training**, **validation**, and **test** sets to evaluate model performance properly.  
+- Apply **data augmentation** techniques (random flips, rotations) and **normalization** to improve model generalization.  
+- Create **DataLoader** objects to efficiently load and batch the data during training and evaluation.
+
+---
+
+## Data Visualization
+
+- Display sample images from each animal class to understand the dataset visually.  
+- Plot class distribution histograms to check for class imbalance or bias in the dataset.
+
+---
+
+## Modeling Approach
+
+### Baseline Model
+
+- Build a **basic CNN model from scratch** as a starting point to establish baseline accuracy.
+
+### Model Optimization
+
+- Perform **manual hyperparameter tuning** such as adjusting learning rates and model architectures.  
+- Apply **automated hyperparameter optimization** using tools like **Optuna** to systematically find better model configurations.  
+- Implement **learning rate reduction** strategies on plateaus to stabilize training and improve convergence.
+
+### Transfer Learning
+
+- Utilize **transfer learning** with pretrained architectures like **ResNet50** on the Animals-10 dataset to improve accuracy.
+
+---
+
+## Evaluation
+
+- Measure model performance using metrics like **accuracy**, **precision**, **recall**, and **F1-score**
+- Generate and analyze a **confusion matrix** to understand class-wise prediction performance and identify common misclassifications.  
+- Analyze failure cases and errors to identify areas of improvement.
+  
+---
+
+## Dataset Reference
+
+- [Animals-10 Dataset on Kaggle](https://www.kaggle.com/datasets/alessiocorrado99/animals10)
+
