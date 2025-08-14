@@ -1,7 +1,6 @@
-# computer-vision-project
-# Animals-10 Image Classification Project
+# Computer Vision Project: Animals-10 Image Classification 
 
-This project focuses on classifying images from the **Animals-10 dataset**, which contains 10 animal classes. The primary goal is to build, train, and optimize deep learning models to accurately classify these images.
+This project focuses on classifying images from the **Animals-10 dataset**, which contains 10 animal classes. The primary goal is to build, train, and optimize deep learning models to accurately classify these images. The project is implemented using **PyTorch** as the primary deep learning framework.
 
 ---
 
