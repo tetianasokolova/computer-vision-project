@@ -5,17 +5,7 @@ This project focuses on classifying images from the **Animals-10 dataset**, whic
 ---
 
 ## Dataset
-The dataset consists of images of 10 animals:
-- Dog
-- Horse
-- Elephant
-- Butterfly
-- Chicken
-- Cat
-- Cow
-- Sheep
-- Spider
-- Squirrel
+The dataset consists of images of 10 animals: dog, horse, elephant, butterfly, chicken, cat, cow, sheep, spider, and squirrel.  
 
 ---
 
@@ -70,6 +60,25 @@ The dataset consists of images of 10 animals:
 - Generate and analyze a **confusion matrix** to understand class-wise prediction performance and identify common misclassifications.  
 - Analyze failure cases and errors to identify areas of improvement.
   
+---
+## Conclusions
+
+- **Baseline CNN:**  
+  - Accuracy: **74.5%**  
+  - This model established a starting point but struggled with classes like **cat** and **cow**.  
+
+- **Optimized CNN (with learning rate scheduler):**  
+  - Accuracy: **83.7%**  
+  - Demonstrated strong improvement, especially for **spider**, **chicken**, and **butterfly** classes.
+  - Still lower recall in **cow** and **sheep**.  
+
+- **Pretrained ResNet50:**  
+  - Accuracy: **98%**  
+  - Excellent, near-perfect performance across all classes.  
+  - Even the weakest classes (**cow**, **sheep**) achieved **96% F1-score**.
+ 
+Overall, the project progressed from a baseline CNN (74.5% accuracy) to an optimized CNN (83.7% accuracy), and finally to a pretrained ResNet50 model achieving 98% accuracy, showing consistent improvement across approaches.
+
 ---
 
 ## Dataset Reference
